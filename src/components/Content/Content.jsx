@@ -1,31 +1,37 @@
 import logo from "../../logo.svg";
+// import fotoStrichman from "/strichman.png";
 import styles from "./Content.module.css"
 import {findAllByDisplayValue} from "@testing-library/react";
 
-export default function Content() {
+export default function Content({hobbies, skills, personalInfos}) {
     return (
-
+        <div className={styles.main}>
             <div className="row">
-                <div className="col">
+                <div className="col-2">
+                    <img src={process.env.PUBLIC_URL + "/strichman.png"} alt="foto" class="rounded"/>
                     Column
                 </div>
                 <div className="col-8">
-                    <div><img src={logo} className="App-logo" alt="logo"/>
-                        <p>
-                            Edit <code>src/App.js</code> and save to reload.
-                        </p>
-                        <a
-                            className="App-link"
-                            href="https://reactjs.org"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Learn React
-                        </a></div>
+                    <section>
+                        <h2>Wer bin ich</h2>
+                        <p>portfolio</p>
+                    </section>
+
+                    <div className="infotext">
+                        <h2>infotext</h2>
+                    </div>
                 </div>
-                <div className="col">
-                    Column
+                <div className="col-2">
+                    <ul className="list-group">
+                        <li className="list-group-item">hobbies</li>
+                        <li className="list-group-item">Dapibus ac facilisis in</li>
+                        <li className="list-group-item">Morbi leo risus</li>
+                        <li className="list-group-item">Porta ac consectetur ac</li>
+                        <li className="list-group-item">Vestibulum at eros</li>
+                    </ul>
                 </div>
+
             </div>
+        </div>
     );
 }

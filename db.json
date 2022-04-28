@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "KICKstart"
+    },
+    {
+      "id": 2,
+      "title": "fetch",
+      "author": "KICKstart"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "hobbies": [
+    {
+      "sports": "aikido",
+      "music": "E Bass Gitarre"
+    }
+  ],
+  "personalInfo": [
+    {
+      "firstName": "John",
+      "secondName": "the Last",
+      "birth": "After John before the Last"
+    }
+  ],
+  "skills": [
+    {
+      "languages": "talking to much",
+      "programmingLanguages": [
+        "c",
+        "c++",
+        "java"
+      ]
+    }
+  ]
+}
