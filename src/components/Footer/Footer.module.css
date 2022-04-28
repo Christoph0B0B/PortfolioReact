@@ -2,6 +2,31 @@
     margin-left: 25px;
     margin-right: 25px;
     /*padding-left: 40px;*/
-    color: black;
+    color: white;
     background: black;
+}
+/* Style the navigation bar */
+/*<!-- .navbar, .footer{ -->*/
+.footer{
+    width: 100%;
+    /*background-color: #555;*/
+    /*background-color:rgb(48, 16, 20);*/
+    overflow: auto;
+}
+
+/* Navbar links */
+/*.navbar a, .footer a  {*/
+.footer a  {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.footer a:hover {
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    animation-timing-function: ease-out;
+    background-color: rgb(171, 209, 181);
 }

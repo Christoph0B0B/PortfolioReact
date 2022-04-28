@@ -1,3 +1,25 @@
-.container{
-    color: yellow;
+/* Navbar links on mouse-over */
+.navbar-nav a:hover{
+    /*background-color: #04AA6D;*/
+    background-color: rgb(171, 209, 181);
 }
+
+/*!* Current/active navbar link *!*/
+.nav-item {
+    /*background-color: #04AA6D;*/
+    background-color: rgb(121, 183, 145);
+}
+
+/*.navbar{*/
+/*    display: flex;*/
+/*}*/
+
+/*.navbar-custom {*/
+/*    background-color: lightgreen;*/
+/*}*/
+/*!* Modify brand and text color *!*/
+
+/*.navbar-custom .navbar-brand,*/
+/*.navbar-custom .navbar-text {*/
+/*    color: black;*/
+/*}*/
