@@ -2,13 +2,14 @@ import logo from "../../logo.svg";
 // import fotoStrichman from "/strichman.png";
 import styles from "./Content.module.css"
 import {findAllByDisplayValue} from "@testing-library/react";
+import ContactForm from "../ContactForm/ContactForm";
 
 export default function Content({hobbies, skills, personalInfos}) {
     return (
         <div className={styles.main}>
             <div className="row">
                 <div className="col-2">
-                    <img src={process.env.PUBLIC_URL + "/strichman.png"} alt="foto" class="rounded"/>
+                    <img src={process.env.PUBLIC_URL + "/strichman.png"} alt="foto" className="rounded"/>
                     Column
                 </div>
                 <div className="col-8">
@@ -30,8 +31,10 @@ export default function Content({hobbies, skills, personalInfos}) {
                         <li className="list-group-item">Vestibulum at eros</li>
                     </ul>
                 </div>
+                <ContactForm/>
 
             </div>
         </div>
+
     );
 }

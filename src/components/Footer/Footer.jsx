@@ -10,11 +10,11 @@ export default function Footer() {
             <a href="#" className="fa-brands fa-github">
                 <i className="fa-brands fa-github"></i>
             </a>
-
-            {/*<FontAwesomeIcon icon="fa-regular fa-house"/>*/}
-            <h1>Hello Footer end</h1>
             <i className="fa-solid fa-thumbs-up fa-5x"></i>
             <i className="fa-brands fa-github"></i>
+            {/*<FontAwesomeIcon icon="fa-regular fa-house"/>*/}
+            <h1>Hello Footer end</h1>
+
 
         </div>
     );
