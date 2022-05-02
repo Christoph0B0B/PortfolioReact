@@ -41,6 +41,49 @@
       ]
     }
   ],
+  "competenciesTest": {
+    "languages": {
+      "title": "languages",
+      "content": "c"
+    },
+    "programmingLanguages": {
+      "title": "languages",
+      "content": "c"
+    }
+  },
+  "certifications": {
+    "title": "certifications",
+    "content": "Prince2 Foundation"
+  },
+  "competencies": [
+    {
+      "languages": {
+        "title": "languages",
+        "content": [
+          "c",
+          "c++",
+          "java",
+          "php"
+        ]
+      },
+      "programmingLanguages": {
+        "title": "programmingLanguages",
+        "content": [
+          "c",
+          "c++",
+          "java",
+          "php"
+        ]
+      },
+      "certifications": {
+        "title": "certifications",
+        "content": [
+          "Prince2 Foundation",
+          "ISTQB Softwaretester Foundation"
+        ]
+      }
+    }
+  ],
   "contacts": [
     {
       "id": 1,
@@ -113,6 +156,11 @@
       "id": "2022-05-02T07:37:36.095Z",
       "name": "ttttttttttasdf",
       "email": "ttttttt@ttt"
+    },
+    {
+      "id": "2022-05-02T10:22:56.037Z",
+      "name": "Devserverasdf",
+      "email": "adf@gffasdf"
     }
   ]
 }

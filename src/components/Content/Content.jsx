@@ -5,7 +5,9 @@ import styles from "./Content.module.css"
 import ContactForm from "../ContactForm/ContactForm";
 import {useState} from "react";
 
-import ApiService from "../ContactForm/ApiService";
+import ApiService from "../../Api/ApiService";
+import Competency from "../Competencies/Competency";
+import CompetencyList from "../Competencies/CompetencyList";
 
 export default function Content({hobbies, skills, personalInfos}) {
     const [contacts, setContacts] = useState([]);
@@ -39,16 +41,9 @@ export default function Content({hobbies, skills, personalInfos}) {
                         <h2>infotext</h2>
                     </div>
                 </div>
-                <div className="col-2">
-                    <ul className="list-group">
-                        <li className="list-group-item">hobbies</li>
-                        <li className="list-group-item">Dapibus ac facilisis in</li>
-                        <li className="list-group-item">Morbi leo risus</li>
-                        <li className="list-group-item">Porta ac consectetur ac</li>
-                        <li className="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                </div>
 
+                <CompetencyList/>
+                <CompetencyList/>
                 <ContactForm addContactOnSubmit={addContact}> </ContactForm>
 
             </div>
