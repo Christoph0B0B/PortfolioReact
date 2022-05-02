@@ -6,7 +6,7 @@
 //
 
 
-import ApiService from "./ApiService";
+import ApiService from "../../Api/ApiService";
 import {useState} from "react";
 
 
@@ -27,18 +27,18 @@ function ContactService()
         return ApiService.fetchDataFromApi('http://localhost:4000/contacts');
     }
 
-    return(
-        <>
-            <h1>Adesso Kickstart</h1>
-            <ul>
-                {contacts.map((contact) => (
-                    <li>
-                        <strong>{contact.name}</strong> ({contact.email})
-                    </li>
-                ))}
-            </ul>
-        </>
-    );
+    // return(
+    //     <>
+    //         <h1>Adesso Kickstart</h1>
+    //         <ul>
+    //             {contacts.map((contact) => (
+    //                 <li>
+    //                     <strong>{contact.name}</strong> ({contact.email})
+    //                 </li>
+    //             ))}
+    //         </ul>
+    //     </>
+    // );
 
 };
 
