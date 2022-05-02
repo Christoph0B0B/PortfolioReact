@@ -1,10 +1,27 @@
 import logo from "../../logo.svg";
 // import fotoStrichman from "/strichman.png";
 import styles from "./Content.module.css"
-import {findAllByDisplayValue} from "@testing-library/react";
+
 import ContactForm from "../ContactForm/ContactForm";
+import {useState} from "react";
+
+import ApiService from "../ContactForm/ApiService";
 
 export default function Content({hobbies, skills, personalInfos}) {
+    const [contacts, setContacts] = useState([]);
+
+    function addContact(contact) {
+        //aus dem alten state bzw dessen array die elmente rausnehemen und mit dem
+        //neuen contact in ein neues array zusammenfuegen
+        setContacts([contact, ...contacts]);
+        //Ebenfalls die Datei aktualisieren Promise returned ignorieren?
+        void ApiService.sendDataToApi('http://localhost:4000/contacts', contact);
+    }
+
+    function getAllContacts() {
+        return ApiService.fetchDataFromApi('http://localhost:4000/contacts');
+    }
+
     return (
         <div className={styles.main}>
             <div className="row">
@@ -31,7 +48,8 @@ export default function Content({hobbies, skills, personalInfos}) {
                         <li className="list-group-item">Vestibulum at eros</li>
                     </ul>
                 </div>
-                <ContactForm/>
+
+                <ContactForm addContactOnSubmit={addContact}> </ContactForm>
 
             </div>
         </div>

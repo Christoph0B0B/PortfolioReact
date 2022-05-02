@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
-import ContactService from "./ContactService";
 
-export default function ContactForm() {
+
+export default function ContactForm({addContactOnSubmit}) {
 
 
     const [name, setName] = useState([]);
@@ -26,7 +26,12 @@ export default function ContactForm() {
 
     function onSubmit(event) {
         event.preventDefault();
-        ContactService.addContact({name: event.target.name.value, email:event.target.email.value});
+        // ContactService.addContact({name: event.target.name.value, email:event.target.email.value});
+        addContactOnSubmit({
+            name:name,
+            email:email
+        });
+        event.target.reset();
         // setTmpNameEmail({name, email});
         console.log(`name: ${name}, email: ${email}`)
     }
