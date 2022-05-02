@@ -1,0 +1,166 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "KICKstart"
+    },
+    {
+      "id": 2,
+      "title": "fetch",
+      "author": "KICKstart"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "hobbies": [
+    {
+      "sports": "aikido",
+      "music": "E Bass Gitarre"
+    }
+  ],
+  "personalInfo": [
+    {
+      "firstName": "John",
+      "secondName": "the Last",
+      "birth": "After John before the Last"
+    }
+  ],
+  "skills": [
+    {
+      "languages": "talking to much",
+      "programmingLanguages": [
+        "c",
+        "c++",
+        "java"
+      ]
+    }
+  ],
+  "competenciesTest": {
+    "languages": {
+      "title": "languages",
+      "content": "c"
+    },
+    "programmingLanguages": {
+      "title": "languages",
+      "content": "c"
+    }
+  },
+  "certifications": {
+    "title": "certifications",
+    "content": "Prince2 Foundation"
+  },
+  "competencies": [
+    {
+      "languages": {
+        "title": "languages",
+        "content": [
+          "c",
+          "c++",
+          "java",
+          "php"
+        ]
+      },
+      "programmingLanguages": {
+        "title": "programmingLanguages",
+        "content": [
+          "c",
+          "c++",
+          "java",
+          "php"
+        ]
+      },
+      "certifications": {
+        "title": "certifications",
+        "content": [
+          "Prince2 Foundation",
+          "ISTQB Softwaretester Foundation"
+        ]
+      }
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "name": "peter",
+      "email": "peter@parker.de"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": "2022-04-29T15:04:24.337Z",
+      "name": "Devserverasdf",
+      "email": "adf@gffasdf"
+    },
+    {
+      "id": "2022-04-29T15:04:37.293Z",
+      "name": "Devserverasdf",
+      "email": "adf@gffasdf"
+    },
+    {
+      "id": "2022-04-29T15:05:32.601Z",
+      "name": "adsf",
+      "email": "qwer@asdf"
+    },
+    {
+      "id": "2022-04-29T15:05:35.566Z",
+      "name": "adsf",
+      "email": "qwer@asdf"
+    },
+    {
+      "id": "2022-04-29T15:05:42.585Z",
+      "name": "adsf",
+      "email": "qwer@asdf"
+    },
+    {
+      "id": "2022-05-02T07:06:38.713Z",
+      "name": "Apples",
+      "email": "qwer@asdf"
+    },
+    {
+      "id": "2022-05-02T07:06:51.271Z",
+      "name": "Apples",
+      "email": "qwer@asdfasdf"
+    },
+    {
+      "id": "2022-05-02T07:28:47.668Z",
+      "name": "asdf",
+      "email": "asdf@asdfd"
+    },
+    {
+      "id": "2022-05-02T07:29:39.325Z",
+      "name": "asdf",
+      "email": "asdf@asdf"
+    },
+    {
+      "id": "2022-05-02T07:29:59.930Z",
+      "name": "tttttttttt",
+      "email": "ttttttt@ttt"
+    },
+    {
+      "id": "2022-05-02T07:37:36.095Z",
+      "name": "ttttttttttasdf",
+      "email": "ttttttt@ttt"
+    },
+    {
+      "id": "2022-05-02T10:22:56.037Z",
+      "name": "Devserverasdf",
+      "email": "adf@gffasdf"
+    }
+  ]
+}

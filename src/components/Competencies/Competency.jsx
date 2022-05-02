@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 
 export default function Competency(prop) {
 
- console.log("competency prop title:"+ prop.competencyData.title);
-    console.log("competency prop title:"+ prop.competencyData.title);
+  // console.log("competency prop title:"+ prop.competencyData.title);
+  // console.log("competency prop title:"+ prop.competencyData.title);
 
     return(
 
@@ -17,8 +17,8 @@ export default function Competency(prop) {
         {/*</ul>*/}
 
         <dl className="row">
-            <dt className="col-sm-3">{prop.competencyData.title}</dt>
-            <dd className="col-sm-9">{prop.competencyData.content}</dd>
+            <dt className="col-sm-3">{prop.competencyData.languages.title}</dt>
+            <dd className="col-sm-9">{prop.competencyData.languages.content}</dd>
             {/*<dt className="col-sm-3">prop.competencyData.title</dt>*/}
             {/*<dd className="col-sm-9">prop.competencyData.content</dd>*/}
         </dl>

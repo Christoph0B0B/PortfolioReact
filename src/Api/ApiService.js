@@ -7,14 +7,12 @@ const ApiService =
                     'Content-Type': 'application/json'
                 }
             }).then(function (res) {
-                console.log("res" + res);
-                console.log("GET httpresponse.status" + res.status);
+                return res;
             }).catch(function (res) {
                 console.log("catch res:" + res);
             });
 
-            const data = await httpResponse.json();
-            return data;
+            return httpResponse;
             // const data =  httpResponse.json();
             // let competencies = data.query.competencies;
             // Object.keys(competencies).forEach(id => {
