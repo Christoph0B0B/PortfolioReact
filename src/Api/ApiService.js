@@ -1,5 +1,8 @@
 const ApiService =
     {
+
+
+
         fetchDataFromApi: async function fetchDataFromApi(url) {
             const httpResponse = await fetch(url, {
                 method: 'GET', headers: {
@@ -9,12 +12,14 @@ const ApiService =
             }).then(function (res) {
                 console.log("res" + res);
                 console.log("GET httpresponse.status" + res.status);
+                return res.json();
             }).catch(function (res) {
                 console.log("catch res:" + res);
             });
 
-            const data = await httpResponse.json();
-            return data;
+            return httpResponse;
+
+
             // const data =  httpResponse.json();
             // let competencies = data.query.competencies;
             // Object.keys(competencies).forEach(id => {

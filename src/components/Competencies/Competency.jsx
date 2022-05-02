@@ -8,13 +8,15 @@ export default function Competency(prop ) {
     return (
 
         <div className="col-2">
-            {/*<ul className="list-group">*/}
-            {/*    <li className="list-group-item">hobbies</li>*/}
-            {/*    <li className="list-group-item">Dapibus ac facilisis in</li>*/}
-            {/*    <li className="list-group-item">Morbi leo risus</li>*/}
-            {/*    <li className="list-group-item">Porta ac consectetur ac</li>*/}
-            {/*    <li className="list-group-item">Vestibulum at eros</li>*/}
-            {/*</ul>*/}
+            <ul className="list-group">
+                <li className="list-group-item">{prop.competencyData.name}</li>
+                prop.competencyData.description.f
+
+                {prop.competencyData.description.map((item,i) =>
+                    <li className="list-group-item" key={i}>{item.name}</li>
+                )}
+
+            </ul>
             <h1>Competency start</h1>
             <dl className="row">
                 <dt className="col-sm-3">{prop.competencyData.name}</dt>

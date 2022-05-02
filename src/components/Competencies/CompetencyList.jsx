@@ -5,28 +5,38 @@ import data from '../../assets/simple.json';
 
 export default function CompetencyList() {
 
-    const [competencies, setCompetencies] = useState(data);
+    const [competencies, setCompetencies] = useState([]);
 
 
     //
     // var myArray = competencies.map(function(town){
     //     return town[2];
     // });
+     async function fetchData ()  {
+        const response = await ApiService.fetchDataFromApi('http://localhost:4000/competencies');
+        setCompetencies(response);
+    }
 
-    // useEffect(() => {
-    //     // fetchOnRender().then((data)=>(setCompetencies(data.json())));
-    //     const fetchData = async () => {
-    //         const response = await ApiService.fetchDataFromApi('http://localhost:4000/competencies');
-    //         setCompetencies(response);
-    //     }
-    //     fetchData();
-    //     // fetchOnRender().then((data)=>(setCompetencies(data.json())));
-    //     // const fetchData =  () => {
-    //     //     const response =  ApiService.fetchDataFromApi('http://localhost:4000/competencies');
-    //     //     setCompetencies(response);
-    //     // }
-    //     // fetchData();
-    // }, []);
+    useEffect(() => {
+        // fetchOnRender().then((data)=>(setCompetencies(data.json())));
+
+        //
+        // fetch('http://localhost:4000/competencies')
+        //     .then((res) => res.json())
+        //     .then((data) => {
+        //         setCompetencies(data);
+        //     })
+        //     .catch((err) => {
+        //         console.log(err);
+        //     });
+
+        // fetchOnRender().then((data)=>(setCompetencies(data.json())));
+        // const fetchData =  () => {
+        //     const response =  ApiService.fetchDataFromApi('http://localhost:4000/competencies');
+        //     setCompetencies(response);
+        // }
+        fetchData();
+    }, []);
 
 
     console.log("competencies:" + competencies);
@@ -37,6 +47,7 @@ export default function CompetencyList() {
 
     return (
         <>
+
             {
                 competencies.map(
                     (order, index) => {
