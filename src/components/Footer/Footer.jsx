@@ -4,16 +4,12 @@ import styles from "./Footer.module.css"
 export default function Footer() {
     return (
         <div className={styles.footer}>
-            <h1>Hello Footer begin</h1>
-            {/*<a href="#" className="fa-solid fa-user"></a>*/}
-            {/*<a href="#" className="fa fa-linkedin"></a>*/}
-            <a href="#" className="fa-brands fa-github">
-                <i className="fa-brands fa-github"></i>
-            </a>
-            <i className="fa-solid fa-thumbs-up fa-5x"></i>
-            <i className="fa-brands fa-github"></i>
-            {/*<FontAwesomeIcon icon="fa-regular fa-house"/>*/}
-            <h1>Hello Footer end</h1>
+
+
+            <a href="your link here"><i className="fa fa-brands fa-github fa-4x"></i></a>
+            <a href="your link here"> <i className="fa fa-linkedin-square fa-4x"></i></a>
+            <a href="your link here"> <i className="fa fa-twitter-square fa-4x"></i></a>
+            <a href="your link here"> <i className="fa fa-facebook-square fa-4x"></i></a>
 
 
         </div>
