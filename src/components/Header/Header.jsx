@@ -2,11 +2,11 @@ import Title from "../Title/Title";
 
 import styles from "./Header.module.css"
 
-export default function Header() {
+export default function Header({title}) {
     return (
         <div className={styles.header}>
-            <p>Header</p>
-            <Title/>
+            <p>{title}</p>
+            {/*<Title/>*/}
         </div>
     );
 }

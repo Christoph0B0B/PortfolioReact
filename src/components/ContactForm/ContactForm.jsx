@@ -52,51 +52,32 @@ export default function ContactForm({addContactOnSubmit}) {
                 <legend>Kontakdaten hinterlassen</legend>
                 <form className="row gy-2 gx-3 align-items-center" onSubmit={onSubmit}>
 
-                    {/*<div className="col-auto">*/}
-                    {/*    <label className="visually-hidden" htmlFor="name">Name</label>*/}
-                    {/*    <input type="text" className="form-control" id="name" placeholder="Jane Doe"*/}
-                    {/*           value={contactFormData.name} onChange={onInputChange}/>*/}
-                    {/*</div>*/}
-                    {/*<span></span>*/}
-                    {/*<div className="col-auto">*/}
-                    {/*    <label className="visually-hidden" htmlFor="name">Name</label>*/}
-                    {/*    <input type="text" className="form-control" id="name" placeholder="Jane Doe"*/}
-                    {/*           value={contactFormData.name} onChange={onInputChange}/>*/}
-                    {/*</div>*/}
-                    {/*<div className="col-auto">*/}
-                    {/*    <label className="visually-hidden" htmlFor="autoSizingInputGroup">Username</label>*/}
-                    {/*    <div className="input-group">*/}
-                    {/*        <div className="input-group-text">@</div>*/}
-                    {/*        <input type="text" className="form-control" id="autoSizingInputGroup"*/}
-                    {/*               placeholder="Username"/>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
-
-                    {/*<span></span>*/}
-                    {/*<div className="col-auto">*/}
-                    {/*    <button type="submit" className="btn btn-primary">Submit</button>*/}
-                    {/*</div>*/}
-
                     <div className="col-auto">
-                    <label htmlFor="name">name:</label>
-                    <input
-                        name="name"
-                        type="text"
-                        value={contactFormData.name}
-                        onChange={onInputChange}
-                    />
+                        <label htmlFor="name">name:</label>
+                        <input
+                            name="name"
+                            type="text"
+                            value={contactFormData.name}
+                            onChange={onInputChange}
+                        />
                     </div>
                     <span></span>
                     <div className="col-auto">
-                    <label htmlFor="email">email:</label>
-                    <input
-                        name="email"
-                        type="email"
-                        value={contactFormData.email}
-                        onChange={onInputChange}
-                    />
+                        <label htmlFor="email">email:</label>
+                        <input
+                            name="email"
+                            type="email"
+                            value={contactFormData.email}
+                            onChange={onInputChange}
+                        />
                     </div>
                     <br/>
+                    <label htmlFor="textarea">Falls du mir etwas mitteilen möchtest:</label>
+
+                    <textarea id="textarea" name="textarea"
+                              rows="5" cols="33">
+                    Falls du mir etwas mitteilen möchtest
+                    </textarea>
 
 
                     <button className="btn btn-primary">Submit</button>

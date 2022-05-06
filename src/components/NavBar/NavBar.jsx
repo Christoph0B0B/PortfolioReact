@@ -1,32 +1,28 @@
-import "./NavBar.module.css"
+import styles from "./NavBar.module.css"
+import {Link} from "react-router-dom";
 
 
 export default function NavBar() {
-    return (
-        <>
+    return (<>
 
-            {/*<nav className={styles.container}><h1>Hi im the navbar</h1></nav>*/}
+        {/*<nav className={styles.container}><h1>Hi im the navbar</h1></nav>*/}
+<nav className={styles.nav}>
+    <ul className={styles.navbar}>
+        <li className={styles.navItem} >
+            <Link className={styles.navLink} to="/home">Home
+            </Link>
+        </li>
+        <li className={styles.navItem}>
+            <Link className={styles.navLink} to="/contact">Contact</Link>
+        </li>
+        <li className={styles.navItem}>
+            <Link className={styles.navLink} to="/about">Portfolio</Link>
+        </li>
 
-            <nav className="navbar  fixed-left navbar-expand-lg navbar-dark bg-secondary">
-                <a className="navbar-brand" href="#"></a>
-                <div className="collapse navbar-collapse" id="navbarNav"> </div>
-                <ul className="navbar-nav">
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Features</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-            </nav>
+    </ul>
+</nav>
 
 
-        </>
-    );
+    </>)
+        ;
 }

@@ -1,25 +1,35 @@
-/* Navbar links on mouse-over */
-.navbar-nav a:hover{
-    /*background-color: #04AA6D;*/
-    background-color: rgb(171, 209, 181);
+.nav{
+    display: block;
+    background-color: #1d6a96;
+}
+.navbar{
+    display:flex;
+
+    /*justify-content: space-between;*/
+    justify-content: start;
+    /*align-content:*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+
 }
 
-/*!* Current/active navbar link *!*/
-.nav-item {
-    /*background-color: #04AA6D;*/
-    background-color: rgb(121, 183, 145);
+.navItem{
+    display: inline;
+    padding: 8px;
+    /*display: flex;*/
+    /*float: left;*/
+    /*justify-content:center*/
+}
+.navLink{
+    /*color: #85b8cb;*/
+    color: #d1dddb;
+    text-decoration: none;
 }
 
-/*.navbar{*/
-/*    display: flex;*/
-/*}*/
-
-/*.navbar-custom {*/
-/*    background-color: lightgreen;*/
-/*}*/
-/*!* Modify brand and text color *!*/
-
-/*.navbar-custom .navbar-brand,*/
-/*.navbar-custom .navbar-text {*/
-/*    color: black;*/
-/*}*/
+.navLink:hover{
+    /*background-color: #04AA6D;*/
+    /*color: #85b8cb;*/
+    color: #283b42;
+}

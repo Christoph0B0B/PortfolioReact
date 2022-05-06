@@ -1,6 +1,12 @@
-/* Style the header */
+
+/*.header {*/
+/*    background-color: #f1f1f1;*/
+/*    padding: 20px;*/
+/*    text-align: center;*/
+/*    */
+/*}*/
 .header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
+    /*den header vom start colum zu end colum erweitern*/
+    grid-column-start: 1;
+    grid-column-end: 5;
 }

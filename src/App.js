@@ -1,45 +1,54 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from "./components/Header/Header";
-import Content from "./components/Content/Content";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
-import {useEffect, useState} from "react";
 
+import {Routes, Route} from "react-router-dom"
+import Home from "./pages/Home/Home";
+import Contact from "./pages/Contact/Contact";
+import Portfolio from "./pages/Portfolio/Portfolio";
 
 function App() {
-    //Ziel bis Mittag persoenliche infos in db son packen
-    //Alee infos in der json stehen
-    const[list, setList] = useState([]);
-    // const[trigger, setTrigger] = useState(true);
-    //json;
 
-    async function fetchData() {
-        const httpResponse = await fetch('http://localhost:4000/items', {
-            method: 'GET',
-        });
-        const data = await httpResponse.json();
 
-        setList(data);
-    }
-
-    useEffect(() => {
-        fetchData();
-    }, []);
-    //Beim, rendern ausgeführt wird
-    //Leere Array beim initialen rendern ausgefuehrt
-    //Beim aendern des state useeffect ausfuehren
-    // useEffect(() => {
-    //     fetchData();
-    //
-    // }, [trigger]);
     return (
-        <div className="App">
-            {/*<btn onclick={setTrigger(!trigger)}>click mich</btn>*/}
-            <Header/>
-            <NavBar></NavBar>
-            <Content></Content>
-            <Footer></Footer>
+        <div className="gridLayoutContainer">
+
+
+            <div className="navBar">
+                <NavBar></NavBar>
+            </div>
+
+
+            {/*<Content>*/}
+            {/*</Content>*/}
+            <div className="content">
+                <Routes>
+                    <Route path="*" element={<div>Nothing there</div>}/>
+                    <Route path="/home" element={<Home/>}/>
+                    <Route path="/contact" element={<Contact/>}/>
+                    <Route path="/about" element={<Portfolio/>}/>
+                </Routes>
+            </div>
+            {/*<Header></Header>*/}
+            {/*Content*/}
+            {/*<div className="content">Content*/}
+            {/*    /!*<div className="content-photo">Photo</div>*!/*/}
+            {/*    /!*<div className="content-about">content-about</div>*!/*/}
+            {/*    /!*<div className="content-competencies">content-competencies</div>*!/*/}
+            {/*    /!*<div className="content-contact-form">contact form</div>*!/*/}
+            {/*    <Content></Content>*/}
+            {/*</div>*/}
+
+            <div className="footer">footer
+                <Footer></Footer>
+            </div>
+            {/*<div className="content-large">Content #1</div>*/}
+            {/*<div className="content-large">Content #2</div>*/}
+
+            {/*<Header className="header"/>*/}
+            {/*<NavBar></NavBar>*/}
+            {/*<Content></Content>*/}
+            {/*<Footer></Footer>*/}
 
         </div>
     );
