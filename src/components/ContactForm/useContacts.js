@@ -7,13 +7,18 @@
 
 
 import ApiService from "../../Api/ApiService";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 
 
-function ContactService()
+export default function useContacts()
 {
     const [contacts, setContacts] = useState([]);
+
+    useEffect(function () {
+        getAllContacts();
+    }, [])
+
 
     function addContact(contact) {
         //aus dem alten state bzw dessen array die elmente rausnehemen und mit dem
@@ -23,23 +28,11 @@ function ContactService()
         void ApiService.sendDataToApi('http://localhost:4000/contacts', contact);
     }
 
-    function getAllContacts() {
-        return ApiService.fetchDataFromApi('http://localhost:4000/contacts');
+    async function getAllContacts() {
+        const apiContacts = await ApiService.fetchDataFromApi('http://localhost:4000/contacts');
+        setContacts(apiContacts);
     }
 
-    // return(
-    //     <>
-    //         <h1>Adesso Kickstart</h1>
-    //         <ul>
-    //             {contacts.map((contact) => (
-    //                 <li>
-    //                     <strong>{contact.name}</strong> ({contact.email})
-    //                 </li>
-    //             ))}
-    //         </ul>
-    //     </>
-    // );
+    return[contacts, addContact];
 
 };
-
-export default ContactService;
